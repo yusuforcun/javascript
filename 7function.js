@@ -84,3 +84,20 @@ function reverseArray(arr){
 }
 console.log(reverseArray([1,2,3,4,5]))
 console.log(reverseArray(['y','u','s','f']))
+
+
+function sum(...numbers){
+    let total = 0 ;
+
+    for(let num of numbers){
+        total+=num ;
+    }
+    return total ;
+}
+console.log(sum(1,2,3))
+
+function countries(ctr){
+    let copy = [...ctr]
+    return copy.reverse();
+}
+console.log(countries("turkey africa"))
