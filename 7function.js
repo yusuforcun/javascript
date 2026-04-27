@@ -1,10 +1,10 @@
 let msg = 'hello world'
 
-function sayHello(){
+function sayHelslo(){
     console.log(msg);
 }
 
-sayHello();
+sayHelslo();
 
 function printFUll(){
     let first = 'Asabah'
@@ -35,3 +35,52 @@ function topla(){
 }
 
 console.log(topla(2,5,7,9,10))
+
+//const = degistrimicem
+const sayHello = (function(name){
+    return `Hello ${name}`
+})('tayfu')
+console.log(sayHello)
+
+;(function(){
+    console.log('he yo!')
+})()
+
+;(function(){
+    console.log('he yo!')
+})()
+
+function merhaba(name){
+    return `hello ${name}`
+}
+
+const mer = name => `hello${name}`
+
+console.log(mer('Amo'))
+
+function solveLinEquation(a, b, c, x, y) {
+  return a * x + b * y + c;
+}
+
+function printArray(arr){
+    for(let i = 0 ; i<arr.length;i++){
+        console.log(arr[i])
+    }
+}
+
+printArray([1,2,3])
+
+function swapValues(n1 , n2){
+    let newn1  = n2
+    let newn2 = n1
+    return [newn1 , newn2]
+}
+
+console.log(swapValues(5,4))
+
+function reverseArray(arr){
+    let newArr = arr.reverse()
+    return newArr
+}
+console.log(reverseArray([1,2,3,4,5]))
+console.log(reverseArray(['y','u','s','f']))
