@@ -22,8 +22,13 @@ const person = {
     isMarried:'no',
     skills:['html',
         'js',
-        'css']
+        'css'],
+        getFUllName : function() {
+            return `${this.name} ${this.surname}`
+        }
+        
     
 }
 
 console.log(person.gender)
+console.log(person.getFUllName())
